@@ -1,6 +1,5 @@
 # =========================================================
 # Projeto: Procedimentos odontológicos no SUS
-# Script: 01_importacao_dados_ficticio.R
 # Objetivo: Criar e importar dados fictícios para MG
 # Autora: Aline R. Mota
 # Período: 2023 - 2025
@@ -211,3 +210,4 @@ write_csv(odontologia, "C:/procedimentos_odontologicos_sus/dados/tabelas/odontol
 write_csv(ranking_proc, "C:/procedimentos_odontologicos_sus/dados/tabelas/ranking_proc_MG.csv")
 write_csv(resumo_ano_proc, "C:/procedimentos_odontologicos_sus/dados/tabelas/resumo_ano_proc_MG.csv")
 write_csv(resumo_mensal, "C:/procedimentos_odontologicos_sus/dados/tabelas/resumo_mensal_MG.csv")
+
