@@ -72,7 +72,6 @@ saveRDS(odontologia, "C:/procedimentos_odontologicos_sus/dados/limpos/odontologi
 
 # =========================================================
 # Projeto: Procedimentos odontológicos no SUS
-# Script: 02_tratamento_dados_MG.R
 # Objetivo: Agrupar, sumarizar e gerar gráficos de procedimentos odontológicos em MG
 # Autora: Aline R. Mota
 # Período: 2023 - 2025
@@ -137,7 +136,6 @@ ggplot(resumo_mensal, aes(x = Data, y = total_quantidade)) +
 
 # =========================================================
 # Projeto: Procedimentos odontológicos no SUS
-# Script: 03_analise_graficos_MG.R
 # Objetivo: Criar gráficos, ranking e tendências de procedimentos odontológicos em MG
 # Autora: Aline R. Mota
 # Período: 2023 - 2025
@@ -205,9 +203,4 @@ ggplot(resumo_ano_proc, aes(x = factor(Ano), y = total_quantidade, fill = Proced
 
 if (!dir.exists("dados/resumos")) dir.create("dados/resumos")
 
-# Tabelas
-write_csv(odontologia, "C:/procedimentos_odontologicos_sus/dados/tabelas/odontologia.csv")
-write_csv(ranking_proc, "C:/procedimentos_odontologicos_sus/dados/tabelas/ranking_proc_MG.csv")
-write_csv(resumo_ano_proc, "C:/procedimentos_odontologicos_sus/dados/tabelas/resumo_ano_proc_MG.csv")
-write_csv(resumo_mensal, "C:/procedimentos_odontologicos_sus/dados/tabelas/resumo_mensal_MG.csv")
 
